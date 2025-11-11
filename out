@@ -1,0 +1,974 @@
+
+> basic-js@1.0.0 test
+> node --test --test-reporter tap
+
+TAP version 13
+# Subtest: Carbon dating
+    # Subtest: function presence
+        # Subtest: function dateSample exists
+        ok 1 - function dateSample exists
+          ---
+          duration_ms: 0.827924
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 3.239114
+      type: 'suite'
+      ...
+    # Subtest: base requirements
+        # Subtest: should return false on wrong type
+        ok 1 - should return false on wrong type
+          ---
+          duration_ms: 0.254641
+          type: 'test'
+          ...
+        # Subtest: should return false if no argument
+        ok 2 - should return false if no argument
+          ---
+          duration_ms: 0.150591
+          type: 'test'
+          ...
+        # Subtest: should validate parameter
+        ok 3 - should validate parameter
+          ---
+          duration_ms: 0.200511
+          type: 'test'
+          ...
+        1..3
+    ok 2 - base requirements
+      ---
+      duration_ms: 0.893974
+      type: 'suite'
+      ...
+    # Subtest: functional requirements 
+        # Subtest: passes simpliest check and determines correct tests
+            # Subtest: basic examples
+            ok 1 - basic examples
+              ---
+              duration_ms: 0.244071
+              type: 'test'
+              ...
+            # Subtest: should handle floating-point numbers
+            ok 2 - should handle floating-point numbers
+              ---
+              duration_ms: 1.043555
+              type: 'test'
+              ...
+            1..2
+        ok 1 - passes simpliest check and determines correct tests
+          ---
+          duration_ms: 1.576396
+          type: 'suite'
+          ...
+        # Subtest: should handle inadequate values
+        ok 2 - should handle inadequate values
+          ---
+          duration_ms: 0.190951
+          type: 'test'
+          ...
+        1..2
+    ok 3 - functional requirements 
+      ---
+      duration_ms: 2.111039
+      type: 'suite'
+      ...
+    1..3
+ok 1 - Carbon dating
+  ---
+  duration_ms: 7.791574
+  type: 'suite'
+  ...
+# Subtest: Common character count
+    # Subtest: function presence
+        # Subtest: function getCommonCharacterCount exists
+        ok 1 - function getCommonCharacterCount exists
+          ---
+          duration_ms: 1.083205
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 2.033649
+      type: 'suite'
+      ...
+    # Subtest: should return the number of common characters between the given strings
+    ok 2 - should return the number of common characters between the given strings
+      ---
+      duration_ms: 1.737448
+      type: 'test'
+      ...
+    1..2
+ok 2 - Common character count
+  ---
+  duration_ms: 4.436619
+  type: 'suite'
+  ...
+# Subtest: Count cats!
+    # Subtest: function presence
+        # Subtest: function countCats exists
+        ok 1 - function countCats exists
+          ---
+          duration_ms: 7.570334
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 8.512917
+      type: 'suite'
+      ...
+    # Subtest: base requirements
+        # Subtest: level 0.1
+        ok 1 - level 0.1
+          ---
+          duration_ms: 0.416712
+          type: 'test'
+          ...
+        # Subtest: level 0.2
+        ok 2 - level 0.2
+          ---
+          duration_ms: 0.204481
+          type: 'test'
+          ...
+        # Subtest: level 0.3
+        ok 3 - level 0.3
+          ---
+          duration_ms: 2.493061
+          type: 'test'
+          ...
+        # Subtest: level 0.4
+        ok 4 - level 0.4
+          ---
+          duration_ms: 0.217831
+          type: 'test'
+          ...
+        # Subtest: level 0.5
+        ok 5 - level 0.5
+          ---
+          duration_ms: 1.826578
+          type: 'test'
+          ...
+        1..5
+    ok 2 - base requirements
+      ---
+      duration_ms: 7.688574
+      type: 'suite'
+      ...
+    # Subtest: functional requirements
+        # Subtest: level 1
+        ok 1 - level 1
+          ---
+          duration_ms: 0.872034
+          type: 'test'
+          ...
+        # Subtest: level 2
+        ok 2 - level 2
+          ---
+          duration_ms: 0.209061
+          type: 'test'
+          ...
+        # Subtest: level 3
+        ok 3 - level 3
+          ---
+          duration_ms: 39.072192
+          type: 'test'
+          ...
+        1..3
+    ok 3 - functional requirements
+      ---
+      duration_ms: 40.629299
+      type: 'suite'
+      ...
+    1..3
+ok 3 - Count cats!
+  ---
+  duration_ms: 57.707254
+  type: 'suite'
+  ...
+# Subtest: Delete digit
+    # Subtest: function presence
+        # Subtest: function deleteDigit exists
+        not ok 1 - function deleteDigit exists
+          ---
+          duration_ms: 1.758478
+          type: 'test'
+          location: '/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/lib/optional-test-extension.js:5:3'
+          failureType: 'testCodeFailure'
+          error: |-
+            Expected values to be strictly equal:
+            + actual - expected
+            
+            + 'undefined'
+            - 'function'
+            
+          code: 'ERR_ASSERTION'
+          name: 'AssertionError'
+          expected: 'function'
+          actual: 'undefined'
+          operator: 'strictEqual'
+          stack: |-
+            TestContext.<anonymous> (/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/test/delete-digit.test.js:10:14)
+            runSyncTestCb (/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/lib/optional-test-extension.js:22:8)
+            TestContext.<anonymous> (/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/lib/optional-test-extension.js:9:7)
+            Test.runInAsyncScope (node:async_hooks:214:14)
+            Test.run (node:internal/test_runner/test:1106:25)
+            Test.start (node:internal/test_runner/test:1003:17)
+            node:internal/test_runner/test:1514:71
+            node:internal/per_context/primordials:464:82
+            new Promise (<anonymous>)
+            new SafePromise (node:internal/per_context/primordials:433:3)
+          ...
+        1..1
+    not ok 1 - function presence
+      ---
+      duration_ms: 2.589942
+      type: 'suite'
+      location: '/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/test/delete-digit.test.js:8:3'
+      failureType: 'subtestsFailed'
+      error: '1 subtest failed'
+      code: 'ERR_TEST_FAILURE'
+      stack: |-
+        async Promise.all (index 0)
+      ...
+    # Subtest: should return the maximal number you can obtain by deleting exactly one digit of the given number
+    not ok 2 - should return the maximal number you can obtain by deleting exactly one digit of the given number
+      ---
+      duration_ms: 1.900138
+      type: 'test'
+      location: '/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/lib/optional-test-extension.js:5:3'
+      failureType: 'testCodeFailure'
+      error: 'deleteDigit is not a function'
+      code: 'ERR_TEST_FAILURE'
+      name: 'TypeError'
+      stack: |-
+        TestContext.<anonymous> (/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/test/delete-digit.test.js:16:24)
+        runSyncTestCb (/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/lib/optional-test-extension.js:22:8)
+        TestContext.<anonymous> (/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/lib/optional-test-extension.js:9:7)
+        Test.runInAsyncScope (node:async_hooks:214:14)
+        Test.run (node:internal/test_runner/test:1106:25)
+        Suite.processPendingSubtests (node:internal/test_runner/test:788:18)
+        Suite.postRun (node:internal/test_runner/test:1235:19)
+        Suite.run (node:internal/test_runner/test:1531:10)
+        async Promise.all (index 0)
+        async Suite.run (node:internal/test_runner/test:1516:7)
+      ...
+    1..2
+not ok 4 - Delete digit
+  ---
+  duration_ms: 5.241503
+  type: 'suite'
+  location: '/media/fourhl/7e5698b1-3a32-4517-8360-6c5486e5fa91/@home/dashweb/dev/courses/rs/frontend/autotasks/basic-js/test/delete-digit.test.js:6:1'
+  failureType: 'subtestsFailed'
+  error: '2 subtests failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# Subtest: DNS stats
+    # Subtest: function getDNSStats exists
+    ok 1 - function getDNSStats exists
+      ---
+      duration_ms: 0.841884
+      type: 'test'
+      ...
+    # Subtest: should return domains stats
+    ok 2 - should return domains stats
+      ---
+      duration_ms: 1.163285
+      type: 'test'
+      ...
+    1..2
+ok 5 - DNS stats
+  ---
+  duration_ms: 3.624287
+  type: 'suite'
+  ...
+# Subtest: Dream team
+    # Subtest: function presence
+        # Subtest: function createDreamTeam exists
+        ok 1 - function createDreamTeam exists
+          ---
+          duration_ms: 0.822074
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 1.693827
+      type: 'suite'
+      ...
+    # Subtest: base requirements
+        # Subtest: should return sequence from pre-sorted array
+        ok 1 - should return sequence from pre-sorted array
+          ---
+          duration_ms: 1.156915
+          type: 'test'
+          ...
+        # Subtest: should return sorted sequence
+        ok 2 - should return sorted sequence
+          ---
+          duration_ms: 1.106675
+          type: 'test'
+          ...
+        # Subtest: empty team shouldn't lead to error
+        ok 3 - empty team shouldn't lead to error
+          ---
+          duration_ms: 0.260271
+          type: 'test'
+          ...
+        1..3
+    ok 2 - base requirements
+      ---
+      duration_ms: 2.839333
+      type: 'suite'
+      ...
+    # Subtest: functional requirements 
+        # Subtest: should handle whitespaces
+        ok 1 - should handle whitespaces
+          ---
+          duration_ms: 0.320551
+          type: 'test'
+          ...
+        # Subtest: should handle lowercase
+        ok 2 - should handle lowercase
+          ---
+          duration_ms: 0.532553
+          type: 'test'
+          ...
+        # Subtest: should return false on wrong type
+        ok 3 - should return false on wrong type
+          ---
+          duration_ms: 0.185481
+          type: 'test'
+          ...
+        # Subtest: should ignore non-string values
+        ok 4 - should ignore non-string values
+          ---
+          duration_ms: 0.383772
+          type: 'test'
+          ...
+        # Subtest: should handle non-standard cases
+        ok 5 - should handle non-standard cases
+          ---
+          duration_ms: 0.761673
+          type: 'test'
+          ...
+        1..5
+    ok 3 - functional requirements 
+      ---
+      duration_ms: 3.788877
+      type: 'suite'
+      ...
+    1..3
+ok 6 - Dream team
+  ---
+  duration_ms: 9.935774
+  type: 'suite'
+  ...
+# Subtest: Encode line
+    # Subtest: function encodeLine exists
+    ok 1 - function encodeLine exists
+      ---
+      duration_ms: 1.571117
+      type: 'test'
+      ...
+    # Subtest: should return encoding version of string
+    ok 2 - should return encoding version of string
+      ---
+      duration_ms: 0.358302
+      type: 'test'
+      ...
+    1..2
+ok 7 - Encode line
+  ---
+  duration_ms: 3.293875
+  type: 'suite'
+  ...
+# Subtest: Extended repeater
+    # Subtest: function presence
+        # Subtest: function repeater exists
+        ok 1 - function repeater exists
+          ---
+          duration_ms: 1.647468
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 4.56457
+      type: 'suite'
+      ...
+    # Subtest: base & functional requirements
+        # Subtest: repeats string properly
+        ok 1 - repeats string properly
+          ---
+          duration_ms: 0.506213
+          type: 'test'
+          ...
+        # Subtest: supports custom separator
+        ok 2 - supports custom separator
+          ---
+          duration_ms: 0.185431
+          type: 'test'
+          ...
+        # Subtest: supports basic addition
+        ok 3 - supports basic addition
+          ---
+          duration_ms: 0.436152
+          type: 'test'
+          ...
+        # Subtest: supports missing repeat counters
+        ok 4 - supports missing repeat counters
+          ---
+          duration_ms: 0.186231
+          type: 'test'
+          ...
+        # Subtest: some pack of tests
+        ok 5 - some pack of tests
+          ---
+          duration_ms: 1.530616
+          type: 'test'
+          ...
+        1..5
+    ok 2 - base & functional requirements
+      ---
+      duration_ms: 3.312075
+      type: 'suite'
+      ...
+    # Subtest: extended requirements 
+        # Subtest: supports multi words 
+        ok 1 - supports multi words 
+          ---
+          duration_ms: 0.303442
+          type: 'test'
+          ...
+        # Subtest: supports different registers & whitespaces & symbols
+        ok 2 - supports different registers & whitespaces & symbols
+          ---
+          duration_ms: 0.187151
+          type: 'test'
+          ...
+        # Subtest: supports different str & addition
+        ok 3 - supports different str & addition
+          ---
+          duration_ms: 0.218591
+          type: 'test'
+          ...
+        # Subtest: correctly converts str and addition options to string
+        ok 4 - correctly converts str and addition options to string
+          ---
+          duration_ms: 0.250802
+          type: 'test'
+          ...
+        # Subtest: correctly works with no separator & no additionSeparator
+        ok 5 - correctly works with no separator & no additionSeparator
+          ---
+          duration_ms: 1.067984
+          type: 'test'
+          ...
+        1..5
+    ok 3 - extended requirements 
+      ---
+      duration_ms: 4.221669
+      type: 'suite'
+      ...
+    1..3
+ok 8 - Extended repeater
+  ---
+  duration_ms: 12.827367
+  type: 'suite'
+  ...
+# Subtest: File names
+    # Subtest: function renameFiles exists
+    ok 1 - function renameFiles exists
+      ---
+      duration_ms: 0.882894
+      type: 'test'
+      ...
+    # Subtest: should return an array of names that will be given to the files
+    ok 2 - should return an array of names that will be given to the files
+      ---
+      duration_ms: 1.248785
+      type: 'test'
+      ...
+    1..2
+ok 9 - File names
+  ---
+  duration_ms: 3.837836
+  type: 'suite'
+  ...
+# Subtest: Get email domain
+    # Subtest: function getEmailDomain exists
+    ok 1 - function getEmailDomain exists
+      ---
+      duration_ms: 0.883733
+      type: 'test'
+      ...
+    # Subtest: should return domain name of the given email address
+    ok 2 - should return domain name of the given email address
+      ---
+      duration_ms: 0.221311
+      type: 'test'
+      ...
+    1..2
+ok 10 - Get email domain
+  ---
+  duration_ms: 2.34243
+  type: 'suite'
+  ...
+# Subtest: Hanoi tower
+    # Subtest: function presence
+        # Subtest: function calculateHanoi exists
+        ok 1 - function calculateHanoi exists
+          ---
+          duration_ms: 0.596893
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 1.205835
+      type: 'suite'
+      ...
+    # Subtest: base requirements
+        # Subtest: returns correct answer
+        ok 1 - returns correct answer
+          ---
+          duration_ms: 1.563597
+          type: 'test'
+          ...
+        1..1
+    ok 2 - base requirements
+      ---
+      duration_ms: 1.740858
+      type: 'suite'
+      ...
+    1..2
+ok 11 - Hanoi tower
+  ---
+  duration_ms: 4.728911
+  type: 'suite'
+  ...
+# Subtest: MAC address
+    # Subtest: function isMAC48Address exists
+    ok 1 - function isMAC48Address exists
+      ---
+      duration_ms: 0.761183
+      type: 'test'
+      ...
+    # Subtest: should check if a given string corresponds to MAC-48 address or not
+    ok 2 - should check if a given string corresponds to MAC-48 address or not
+      ---
+      duration_ms: 0.249371
+      type: 'test'
+      ...
+    1..2
+ok 12 - MAC address
+  ---
+  duration_ms: 2.093819
+  type: 'suite'
+  ...
+# Subtest: Matrix elements sum
+    # Subtest: function getMatrixElementsSum exists
+    ok 1 - function getMatrixElementsSum exists
+      ---
+      duration_ms: 0.861223
+      type: 'test'
+      ...
+    # Subtest: should return the sum of the matrix elements that are not below 0
+    ok 2 - should return the sum of the matrix elements that are not below 0
+      ---
+      duration_ms: 0.278161
+      type: 'test'
+      ...
+    1..2
+ok 13 - Matrix elements sum
+  ---
+  duration_ms: 2.444571
+  type: 'suite'
+  ...
+# Subtest: Minesweeper
+    # Subtest: function minesweeper exists
+    ok 1 - function minesweeper exists
+      ---
+      duration_ms: 0.867614
+      type: 'test'
+      ...
+    # Subtest: should return minesweeper game setup
+    ok 2 - should return minesweeper game setup # TODO Pending: should return minesweeper game setup
+      ---
+      duration_ms: 0.210671
+      type: 'test'
+      ...
+    1..2
+ok 14 - Minesweeper
+  ---
+  duration_ms: 2.153699
+  type: 'suite'
+  ...
+# Subtest: Recursive depth
+    # Subtest: function presence
+        # Subtest: function calculateDepth exists
+        ok 1 - function calculateDepth exists
+          ---
+          duration_ms: 0.779244
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 1.719977
+      type: 'suite'
+      ...
+    # Subtest: functional requirements
+        # Subtest: returns correct depth of flat arrays
+        ok 1 - returns correct depth of flat arrays # TODO Pending: returns correct depth of flat arrays
+          ---
+          duration_ms: 0.398362
+          type: 'test'
+          ...
+        # Subtest: returns correct depth of nested arrays
+        ok 2 - returns correct depth of nested arrays # TODO Pending: returns correct depth of nested arrays
+          ---
+          duration_ms: 0.253831
+          type: 'test'
+          ...
+        1..2
+    ok 2 - functional requirements
+      ---
+      duration_ms: 0.920674
+      type: 'suite'
+      ...
+    1..2
+ok 15 - Recursive depth
+  ---
+  duration_ms: 4.898012
+  type: 'suite'
+  ...
+# Subtest: Make chain!
+    # Subtest: variable presence
+        # Subtest: object chainMaker exists
+        ok 1 - object chainMaker exists
+          ---
+          duration_ms: 0.741783
+          type: 'test'
+          ...
+        1..1
+    ok 1 - variable presence
+      ---
+      duration_ms: 1.550527
+      type: 'suite'
+      ...
+    # Subtest: base requirements
+        # Subtest: chaining works!
+        ok 1 - chaining works! # TODO Pending: chaining works!
+          ---
+          duration_ms: 0.337011
+          type: 'test'
+          ...
+        # Subtest: throws an Error with message "You can't remove incorrect link!" on trying to remove wrong link
+        ok 2 - throws an Error with message "You can't remove incorrect link!" on trying to remove wrong link # TODO
+          ---
+          duration_ms: 0.307671
+          type: 'test'
+          ...
+        1..2
+    ok 2 - base requirements
+      ---
+      duration_ms: 0.888974
+      type: 'suite'
+      ...
+    # Subtest: functional requirements
+        # Subtest: function returns correct values
+        ok 1 - function returns correct values # TODO Pending: function returns correct values
+          ---
+          duration_ms: 1.626767
+          type: 'test'
+          ...
+        # Subtest: removeLinks works correctly
+        ok 2 - removeLinks works correctly # TODO Pending: removeLinks works correctly
+          ---
+          duration_ms: 0.457713
+          type: 'test'
+          ...
+        1..2
+    ok 3 - functional requirements
+      ---
+      duration_ms: 2.458391
+      type: 'suite'
+      ...
+    1..3
+ok 16 - Make chain!
+  ---
+  duration_ms: 7.331322
+  type: 'suite'
+  ...
+# Subtest: Sort by height
+    # Subtest: function sortByHeight exists
+    ok 1 - function sortByHeight exists
+      ---
+      duration_ms: 0.795744
+      type: 'test'
+      ...
+    # Subtest: should return sorted array without moving -1
+    ok 2 - should return sorted array without moving -1 # TODO Pending: should return sorted array without moving -1
+      ---
+      duration_ms: 0.280491
+      type: 'test'
+      ...
+    1..2
+ok 17 - Sort by height
+  ---
+  duration_ms: 2.139479
+  type: 'suite'
+  ...
+# Subtest: Sum digits
+    # Subtest: function getSumOfDigits exists
+    ok 1 - function getSumOfDigits exists
+      ---
+      duration_ms: 0.613183
+      type: 'test'
+      ...
+    # Subtest: should return the sum of digits
+    ok 2 - should return the sum of digits # TODO Pending: should return the sum of digits
+      ---
+      duration_ms: 0.199121
+      type: 'test'
+      ...
+    1..2
+ok 18 - Sum digits
+  ---
+  duration_ms: 1.691898
+  type: 'suite'
+  ...
+# Subtest: Transform array
+    # Subtest: function presence
+        # Subtest: function transform exists
+        ok 1 - function transform exists
+          ---
+          duration_ms: 1.530056
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 2.412981
+      type: 'suite'
+      ...
+    # Subtest: functional requirements
+        # Subtest: correctly works with an empty array
+        ok 1 - correctly works with an empty array # TODO Pending: correctly works with an empty array
+          ---
+          duration_ms: 0.427822
+          type: 'test'
+          ...
+        # Subtest: throws an Error with message "'arr' parameter must be an instance of the Array!" if arr is not an instance of the Array
+        ok 2 - throws an Error with message "'arr' parameter must be an instance of the Array!" if arr is not an instance of the Array # TODO
+          ---
+          duration_ms: 0.303311
+          type: 'test'
+          ...
+        # Subtest: doesn't affect simple arrays
+        ok 3 - doesn't affect simple arrays # TODO Pending: doesn't affect simple arrays
+          ---
+          duration_ms: 0.223311
+          type: 'test'
+          ...
+        # Subtest: does not apply flags to missing elements
+        ok 4 - does not apply flags to missing elements # TODO Pending: does not apply flags to missing elements
+          ---
+          duration_ms: 0.210141
+          type: 'test'
+          ...
+        # Subtest: advanced sequence interactions work well
+        ok 5 - advanced sequence interactions work well # TODO Pending: advanced sequence interactions work well
+          ---
+          duration_ms: 3.474125
+          type: 'test'
+          ...
+        # Subtest: doesn't change initial array
+        ok 6 - doesn't change initial array # TODO Pending: doesn't change initial array
+          ---
+          duration_ms: 0.178011
+          type: 'test'
+          ...
+        1..6
+    ok 2 - functional requirements
+      ---
+      duration_ms: 5.353854
+      type: 'suite'
+      ...
+    1..2
+ok 19 - Transform array
+  ---
+  duration_ms: 8.289966
+  type: 'suite'
+  ...
+# Subtest: Vigenere cipher
+    # Subtest: class presence
+        # Subtest: class VigenereCipheringMachine exists
+        ok 1 - class VigenereCipheringMachine exists
+          ---
+          duration_ms: 1.377866
+          type: 'test'
+          ...
+        # Subtest: correct inheritance
+        ok 2 - correct inheritance
+          ---
+          duration_ms: 0.15126
+          type: 'test'
+          ...
+        # Subtest: has methods
+        ok 3 - has methods
+          ---
+          duration_ms: 0.16565
+          type: 'test'
+          ...
+        1..3
+    ok 1 - class presence
+      ---
+      duration_ms: 2.445621
+      type: 'suite'
+      ...
+    # Subtest: base requirements
+        # Subtest: must throw an Error if no args
+        ok 1 - must throw an Error if no args # TODO
+          ---
+          duration_ms: 0.626962
+          type: 'test'
+          ...
+        # Subtest: base encryption
+        ok 2 - base encryption # TODO Pending: base encryption
+          ---
+          duration_ms: 0.175631
+          type: 'test'
+          ...
+        # Subtest: base decryption
+        ok 3 - base decryption # TODO Pending: base decryption
+          ---
+          duration_ms: 0.194851
+          type: 'test'
+          ...
+        1..3
+    ok 2 - base requirements
+      ---
+      duration_ms: 1.333756
+      type: 'suite'
+      ...
+    # Subtest: functional requirements
+        # Subtest: double-sided direct cryptography
+        ok 1 - double-sided direct cryptography # TODO Pending: double-sided direct cryptography
+          ---
+          duration_ms: 0.400152
+          type: 'test'
+          ...
+        # Subtest: double-sided reverse cryptography 2
+        ok 2 - double-sided reverse cryptography 2 # TODO Pending: double-sided reverse cryptography 2
+          ---
+          duration_ms: 0.217301
+          type: 'test'
+          ...
+        1..2
+    ok 3 - functional requirements
+      ---
+      duration_ms: 0.883994
+      type: 'suite'
+      ...
+    1..3
+ok 20 - Vigenere cipher
+  ---
+  duration_ms: 5.413834
+  type: 'suite'
+  ...
+# Subtest: What season
+    # Subtest: function presence
+        # Subtest: function getSeason exists
+        ok 1 - function getSeason exists
+          ---
+          duration_ms: 0.644033
+          type: 'test'
+          ...
+        1..1
+    ok 1 - function presence
+      ---
+      duration_ms: 2.08827
+      type: 'suite'
+      ...
+    # Subtest: base requirements
+        # Subtest: returns proper value
+        ok 1 - returns proper value # TODO Pending: returns proper value
+          ---
+          duration_ms: 0.546313
+          type: 'test'
+          ...
+        # Subtest: returns proper value if date is before 1970
+        ok 2 - returns proper value if date is before 1970 # TODO Pending: returns proper value if date is before 1970
+          ---
+          duration_ms: 0.226471
+          type: 'test'
+          ...
+        # Subtest: returns proper value (month index)
+        ok 3 - returns proper value (month index) # TODO Pending: returns proper value (month index)
+          ---
+          duration_ms: 0.230231
+          type: 'test'
+          ...
+        # Subtest: correctly handles argument absence
+        ok 4 - correctly handles argument absence # TODO Pending: correctly handles argument absence
+          ---
+          duration_ms: 0.279421
+          type: 'test'
+          ...
+        # Subtest: some pack of tests
+        ok 5 - some pack of tests # TODO Pending: some pack of tests
+          ---
+          duration_ms: 0.408062
+          type: 'test'
+          ...
+        1..5
+    ok 2 - base requirements
+      ---
+      duration_ms: 2.124609
+      type: 'suite'
+      ...
+    # Subtest: extended requirements 
+        # Subtest: throws an error with message "Invalid date!" on invalid argument
+        ok 1 - throws an error with message "Invalid date!" on invalid argument # TODO
+          ---
+          duration_ms: 0.320011
+          type: 'test'
+          ...
+        # Subtest: throws an error with message "Invalid date!" on tricky moment
+        ok 2 - throws an error with message "Invalid date!" on tricky moment # TODO
+          ---
+          duration_ms: 0.190051
+          type: 'test'
+          ...
+        # Subtest: throws an error with message "Invalid date!" on a very tricky moment
+        ok 3 - throws an error with message "Invalid date!" on a very tricky moment # TODO
+          ---
+          duration_ms: 0.214151
+          type: 'test'
+          ...
+        1..3
+    ok 3 - extended requirements 
+      ---
+      duration_ms: 0.992484
+      type: 'suite'
+      ...
+    1..3
+ok 21 - What season
+  ---
+  duration_ms: 5.824905
+  type: 'suite'
+  ...
+1..21
+# tests 92
+# suites 51
+# pass 62
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 28
+# duration_ms 271.433198

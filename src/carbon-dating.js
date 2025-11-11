@@ -17,11 +17,20 @@ const HALF_LIFE_PERIOD = 5730;
  * dateSample('WOOT!') => false
  *
  */
-function dateSample(/* sampleActivity */) {
-  // Remove line below and write your code here
-  throw new NotImplementedError('Not implemented');
-}
+function dateSample(sampleActivity) {
+  if (typeof sampleActivity !== 'string' || isNaN(+sampleActivity))
+    return false;
 
+  // ln(2) = 0.693;
+  const RADIOACTIVE_DECAY = 0.693;
+  const DECAY_CONSTANT = RADIOACTIVE_DECAY / HALF_LIFE_PERIOD;
+  const activityRatio = MODERN_ACTIVITY / parseFloat(sampleActivity);
+  const age = Math.log(activityRatio) / DECAY_CONSTANT;
+
+  if (age === Infinity) return false;
+
+  return Math.ceil(age) > 0 ? Math.ceil(age) : false;
+}
 module.exports = {
-  dateSample
+  dateSample,
 };
